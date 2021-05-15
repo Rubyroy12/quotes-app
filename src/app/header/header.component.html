@@ -1,0 +1,14 @@
+<div>
+    <h2>Welcome to  my quotes app </h2>
+    <hr>
+    <br>
+    
+        <div *ngFor="let quote of quotes">{{quote.cite}}
+            <p>By {{quote.name}}</p>
+            <p>Created  on {{quote.dateCreated}}</p>
+
+        </div>
+        <app-form (addQuote)="addNewQuote($event)"></app-form>
+
+
+</div>

@@ -1,0 +1,12 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+body{
+    background-color:rgb(96, 96, 97);
+    color: white;
+    font-family: 'Montserrat';
+}
+.container {
+    background-color: rgb(1, 1, 56);
+}

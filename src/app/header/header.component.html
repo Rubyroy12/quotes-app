@@ -6,44 +6,45 @@
     <div class="col-md-5">
       <!-- <div *ngFor='let quote of quotes;let i = index'>
         <div> -->
-          <ul>
-            <li *ngFor="let quote of quotes;  let i = index">
-              {{quote.cite}} 
-              <p>By {{quote.name}}</p>
-              <p>Created on {{quote.dateCreated}}</p>
-              
-              <div class="d-flex justify-content-between">
-                <button class="btn btn-outline-success" (click)="upvote()">Like</button>
-                
-                <p>Count: {{count}}</p>
+      <ul>
+        <li *ngFor="let quote of quotes;  let i = index">
+          <p><fa-icon [icon]="faQuoteLeft"></fa-icon>{{quote.cite}} " </p>
+          <p>By {{quote.name}}</p>
+          <p>Created on {{quote.dateCreated | date}}</p>
+          <p>posted on {{quote.dateCreated | date }}</p>
 
-                <button class="btn btn-outline-primary" (click)="downvote()">DesLike</button>
-                <p>Count: {{discount}}</p>
+          <div class="d-flex justify-content-between">
+            <button class="btn btn-outline-success" (click)="upvote()">Like</button>
 
-                <button class="btn btn-outline-danger" (click)="quoteDelete(i)">Delete quote</button>
-              </div>
+            <p>Count: {{count}}</p>
 
-            </li>
+            <button class="btn btn-outline-primary" (click)="downvote()">DesLike</button>
+            <p>Count: {{discount}}</p>
 
+            <button class="btn btn-outline-danger" (click)="quoteDelete(i)">Delete quote</button>
+          </div>
 
-          </ul>
+        </li>
 
 
-
-        </div>
-        <div class="col-md-5">
-          <app-form (addQuote)="addNewQuote($event)"></app-form>
-        </div>
-
-
-      </div>
-      <br>
-      <div class="card-footer d-flex justify-content-center">
-
-        <p>&copy; Copyright 2021 Ibrahim Development All rights reserved.</p>
-
-      </div>
+      </ul>
 
 
 
     </div>
+    <div class="col-md-5">
+      <app-form (addQuote)="addNewQuote($event)"></app-form>
+    </div>
+
+
+  </div>
+  <br>
+  <div class="card-footer d-flex justify-content-center">
+
+    <p>&copy; Copyright 2021 Ibrahim Development All rights reserved.</p>
+
+  </div>
+
+
+
+</div>

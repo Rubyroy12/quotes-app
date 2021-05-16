@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 import { Quote } from '../quote';
 
@@ -10,6 +11,7 @@ import { Quote } from '../quote';
 export class HeaderComponent implements OnInit {
   count: number = 0;
   discount : number=0;
+  faQuoteLeft=faQuoteLeft;
 
   @Input()
   quote!: Quote;

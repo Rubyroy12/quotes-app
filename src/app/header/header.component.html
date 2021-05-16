@@ -8,10 +8,18 @@
         <li *ngFor="let quote of quotes">{{quote.cite}}
           <p>By {{quote.name}}</p>
           <p>Created on {{quote.dateCreated}}</p>
-          
+          <div class="d-flex justify-content-between">
+            <button class="btn btn-outline-success">Like</button>
+            <p>Count:</p>
+
+            <button class="btn btn-outline-primary">Like</button>
+            <p>Count:</p>
+            <button class="btn btn-outline-danger">Delete quote</button>
+
+          </div>
 
         </li>
-       
+
 
 
       </ul>
@@ -19,8 +27,16 @@
 
     </div>
     <div class="col-md-6">
-        <app-form (addQuote)="addNewQuote($event)"></app-form>
+      <app-form (addQuote)="addNewQuote($event)"></app-form>
     </div>
+   
+    
+  </div>
+  <br>
+  <div class="card-footer d-flex justify-content-center">
+
+    <p>&copy; Copyright 2021 Ibrahim Development All rights reserved.</p>
+
   </div>
 
 

@@ -4,41 +4,46 @@
   <br>
   <div class="row">
     <div class="col-md-5">
-      <ul>
-        <li *ngFor="let quote of quotes">{{quote.cite}}
-          <p>By {{quote.name}}</p>
-          <p>Created on {{quote.dateCreated}}</p>
-          <div class="d-flex justify-content-between">
-            <button class="btn btn-outline-success" (click)="like()">Like</button>
-            <p>Count:</p>
+      <!-- <div *ngFor='let quote of quotes;let i = index'>
+        <div> -->
+          <ul>
+            <li *ngFor="let quote of quotes;  let i = index">
+              {{quote.cite}} 
+              <p>By {{quote.name}}</p>
+              <p>Created on {{quote.dateCreated}}</p>
+              
+              <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-success" (click)="upvote()">Like</button>
+                
+                <p>Count: {{count}}</p>
 
-            <button class="btn btn-outline-primary" (click)="Deslike()">DesLike</button>
-            <p>Count:</p>
-            <button class="btn btn-outline-danger" (click)="quoteDelete()">Delete quote</button>
+                <button class="btn btn-outline-primary" (click)="downvote()">DesLike</button>
+                <p>Count: {{discount}}</p>
 
-          </div>
+                <button class="btn btn-outline-danger" (click)="quoteDelete(i)">Delete quote</button>
+              </div>
 
-        </li>
+            </li>
+
+
+          </ul>
 
 
 
-      </ul>
+        </div>
+        <div class="col-md-5">
+          <app-form (addQuote)="addNewQuote($event)"></app-form>
+        </div>
+
+
+      </div>
+      <br>
+      <div class="card-footer d-flex justify-content-center">
+
+        <p>&copy; Copyright 2021 Ibrahim Development All rights reserved.</p>
+
+      </div>
+
 
 
     </div>
-    <div class="col-md-6">
-      <app-form (addQuote)="addNewQuote($event)"></app-form>
-    </div>
-   
-    
-  </div>
-  <br>
-  <div class="card-footer d-flex justify-content-center">
-
-    <p>&copy; Copyright 2021 Ibrahim Development All rights reserved.</p>
-
-  </div>
-
-
-
-</div>

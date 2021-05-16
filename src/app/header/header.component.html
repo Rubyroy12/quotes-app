@@ -3,7 +3,7 @@
     <br>
     <br>
     <h2>Welcome to my quotes app  </h2>
-    <p> {{today}}</p>
+    <p class="text-warning"> {{today}}</p>
 
 
   </div>
@@ -16,8 +16,8 @@
       <ul>
         <li *ngFor="let quote of quotes;  let i = index">
           <p>" {{quote.cite}} " </p>
-          <p>By {{quote.name}}</p>
-          <p>Created on {{quote.dateCreated | date}}</p>
+          <p >By {{quote.name}}</p>
+          <p>Created on {{quote.dateCreated | date}}</p>  
           
 
           <div class="d-flex justify-content-between">

@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
   count: number = 0;
   discount : number=0;
   faThumbsUp=faThumbsUp;
+  
+  today:string = new Date().toDateString();
 
   @Input()
   quote!: Quote;

@@ -1,14 +1,28 @@
 <div>
-    <h2>Welcome to  my quotes app </h2>
-    <hr>
-    <br>
-    
-        <div *ngFor="let quote of quotes">{{quote.cite}}
-            <p>By {{quote.name}}</p>
-            <p>Created  on {{quote.dateCreated}}</p>
+  <h2>Welcome to my quotes app </h2>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-md-5">
+      <ul>
+        <li *ngFor="let quote of quotes">{{quote.cite}}
+          <p>By {{quote.name}}</p>
+          <p>Created on {{quote.dateCreated}}</p>
+          
 
-        </div>
+        </li>
+       
+
+
+      </ul>
+
+
+    </div>
+    <div class="col-md-6">
         <app-form (addQuote)="addNewQuote($event)"></app-form>
+    </div>
+  </div>
+
 
 
 </div>

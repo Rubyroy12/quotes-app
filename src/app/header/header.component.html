@@ -9,12 +9,12 @@
           <p>By {{quote.name}}</p>
           <p>Created on {{quote.dateCreated}}</p>
           <div class="d-flex justify-content-between">
-            <button class="btn btn-outline-success">Like</button>
+            <button class="btn btn-outline-success" (click)="like()">Like</button>
             <p>Count:</p>
 
-            <button class="btn btn-outline-primary">Like</button>
+            <button class="btn btn-outline-primary" (click)="Deslike()">DesLike</button>
             <p>Count:</p>
-            <button class="btn btn-outline-danger">Delete quote</button>
+            <button class="btn btn-outline-danger" (click)="quoteDelete()">Delete quote</button>
 
           </div>
 

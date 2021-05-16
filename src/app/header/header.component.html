@@ -8,7 +8,7 @@
         <div> -->
       <ul>
         <li *ngFor="let quote of quotes;  let i = index">
-          <p><fa-icon [icon]="faQuoteLeft"></fa-icon>{{quote.cite}} " </p>
+          <p>" {{quote.cite}} " </p>
           <p>By {{quote.name}}</p>
           <p>Created on {{quote.dateCreated | date}}</p>
           <p>posted on {{quote.dateCreated | date }}</p>

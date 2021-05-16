@@ -1,3 +1,30 @@
+## Author
+- Ibrahim Kiprotich 
+- 
+## Description 
+- This  is an angular app that alow the user to create his/her own quote and also to either upvote or downvote the quote
+## Set up
+- To acces this project files locally you need it follow the following instructions
+  1. sudo apt install git
+  2. git clone https://github.com/Rubyroy12/quotes-app.git
+
+## Technologies used
+1. HTML5 
+2. CSS
+3. Javascript
+4. Bootstrap
+5. Angular
+
+## live Site
+- View [live]()
+ ## License
+ - This projects is licensed under the [MIT](LICENCSE.md) license
+
+
+
+
+
+
 # QuotesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.

@@ -12,6 +12,7 @@ import { Quote } from '../quote';
 export class HeaderComponent implements OnInit {
   count: number = 0;
   discount : number=0;
+
   faThumbsUp=faThumbsUp;
   
   today:string = new Date().toDateString();
@@ -48,8 +49,10 @@ export class HeaderComponent implements OnInit {
 
   upvote() {
     this.count++;
+    // this.quote.likes++;
   }
   downvote() {
+    // this.quote.delikes++;
     this.discount++;
   }
 

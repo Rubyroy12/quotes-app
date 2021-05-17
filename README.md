@@ -16,7 +16,7 @@
 5. Angular
 
 ## live Site
-- View [live]()
+- View [live](https://rubyroy12.github.io/quotes-app/)
  ## License
  - This projects is licensed under the [MIT](LICENCSE.md) license
 

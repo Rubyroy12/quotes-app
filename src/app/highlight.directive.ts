@@ -7,7 +7,7 @@ export class HighlightDirective {
 
   constructor( private elementRef: ElementRef) 
   { 
-    this.elementRef.nativeElement.style.backgroundColor = "brown";
+    this.elementRef.nativeElement.style.color = "brown";
   }
 
   @HostListener('click')onclick(){

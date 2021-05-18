@@ -15,18 +15,20 @@
         <div> -->
       <ul>
         <li *ngFor="let quote of quotes;  let i = index">
-          <p>" {{quote.cite}} " </p>
-          <p >By {{quote.name}}</p>
+          <p >" {{quote.cite}} " </p>
+          <p >By {{quote.name}} </p>
+          <i *ngIf='totalVoteCount' appHighlight class="bi bi-star-fill" ></i>
+        
           <p>Created on {{quote.dateCreated | date}}</p>  
           
 
           <div class="d-flex justify-content-between">
             <button class="btn btn-outline-success" (click)="upvote()">Like</button>
 
-            <p>Count: {{count}}</p>
+            <p>Count: {{totalVoteCount}}</p>
 
             <button class="btn btn-outline-primary" (click)="downvote()">DesLike</button>
-            <p>Count: {{discount}}</p>
+            <p>Count: {{totalVoteCount}}</p>
 
             <button class="btn btn-outline-danger" (click)="quoteDelete(i)">Delete quote</button>
           </div>

@@ -10,8 +10,8 @@ import { Quote } from '../quote';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  count: number = 0;
-  discount : number=0;
+  // count: number = 0;
+  // discount : number=0;
 
   faThumbsUp=faThumbsUp;
   
@@ -47,16 +47,17 @@ export class HeaderComponent implements OnInit {
   }
 
 
+
+  constructor() { }
+  totalVoteCount:number =0;
   upvote() {
-    this.count++;
+    this.totalVoteCount++;
     // this.quote.likes++;
   }
   downvote() {
     // this.quote.delikes++;
-    this.discount++;
+    this.totalVoteCount++;
   }
-
-  constructor() { }
 
   ngOnInit() {
   }
